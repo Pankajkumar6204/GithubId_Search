@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(22, 6, 36);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 80%;
+    width: 60%;
+    border-radius: 12px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#form{
+    display: flex;
+    justify-content: center;
+}
+#form .search{
+    background-color: black;
+    color: aliceblue;
+    height: 40px;
+    width: 360px;
+    border-radius: 12px;
+    font-size: 18px;
+    padding: 13px 14px;
+}
+
+.main .card{
+    margin-top: 32px;
+    display: flex;
+    gap: 62px;
+    padding: 53px 54px;
+    color: white;
+    background-color: black;
+    margin:32px;
+    border-radius: 32px;
+}
+.card .avatar{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.info{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 32px;
+    list-style: none;
+    margin-top: 12px;
+}
+.info li{
+    font-size: 22px;
+    text-decoration-line: none;
+}
+.info .info-name{
+    color: rgb(210, 216, 52);
+    gap: 22px;
+}
+
+.user-info p{
+    max-width: 460px;
+    font-size: 22px;
+}
+#repos{
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.repo{
+    height: 90%;
+    width: 96%;
+    background-color: blueviolet;
+    gap: 34px;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    overflow: hidden;
+    font-size: 14px;
+}
+.repo:hover{
+    color: red;
+    background-color: rgb(118, 235, 140);
+}
+
+@media (max-width: 711px){
+    .container{
+        background-color: rgb(12, 12, 28);
+        margin-top: -12rem;
+        height: 100%;
+        width: 100%;
+        border-radius: 12px;
+        /* background-color: blueviolet; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #form .search{
+        background-color: black;
+        color: aliceblue;
+        height: 40px;
+        width: 320px;
+        border-radius: 12px;
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+    .main .card{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+        padding: 33px 34px;
+        color: white;
+        background-color: black;
+        margin:43px;
+        border-radius: 22px;
+    }
+    .card .avatar{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+    }
+    .info{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-evenly;
+        gap: 32px;
+        /* max-width: 50%; */
+        /* list-style: none; */
+        margin-top: 12px;
+    }
+    .user-info h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+    
+    .user-info p{
+        max-width: 440px;
+        font-size: 20px;
+    }
+
+    #repos{
+        margin-top: 12px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .repo{
+        height: 90%;
+        width: 92%;
+        background-color: blueviolet;
+        gap: 34px;
+        color: white;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 12px;
+        overflow: hidden;
+        font-size: 14px;
+    }
+    
+    
+}
+
+@media (max-width: 431px){
+    .container{
+        background-color: rgb(12, 12, 28);
+        margin-top: -32rem;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #form .search{
+        background-color: black;
+        color: aliceblue;
+        height: 40px;
+        width: 280px;
+        border-radius: 10px;
+        font-size: 14px;
+        padding: 9px 9px;
+    }
+    .main .card{
+        margin-top: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+        padding: 33px 34px;
+        color: white;
+        background-color: black;
+        margin:33px;
+        border-radius: 22px;
+    }
+    .card .avatar{
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+    }
+    .info{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-evenly;
+        gap: 32px;
+        /* max-width: 50%; */
+        /* list-style: none; */
+        margin-top: 12px;
+    }
+    .info li{
+        font-size: 18px;
+        text-decoration-line: none;
+    }
+    .user-info h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+    
+    .user-info p{
+        max-width: 420px;
+        font-size: 20px;
+    }
+
+    #repos{
+        margin-top: 12px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .repo{
+        height: 90%;
+        width: 92%;
+        background-color: blueviolet;
+        gap: 24px;
+        color: white;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        overflow: hidden;
+        font-size: 10px;
+    }
+    
+    
+}
+
